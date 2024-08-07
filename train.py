@@ -2126,6 +2126,7 @@ def main():
                             ).sample
                         else:
                             # SDXL, Kolors, other default unet prediction.
+                            print(noisy_latents.size())
                             model_pred = unet(
                                 noisy_latents,
                                 timesteps,
